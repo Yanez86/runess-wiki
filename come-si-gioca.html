@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Come si gioca · Wiki di Runess</title>
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+<button class="menu" type="button" aria-label="Menu">☰</button>
+<a class="brand" href="index.html"><img src="img/icon.png" alt=""><span>Runess</span><small>wiki</small></a>
+<div class="search"><input type="search" id="q" placeholder="Cerca nella wiki…" aria-label="Cerca nella wiki" autocomplete="off"><ol id="results" hidden></ol></div>
+</header>
+<div class="layout">
+<nav class="side"><a href="index.html">Inizio</a>
+<a href="storia.html">La storia</a>
+<a href="comandi.html">Comandi</a>
+<a href="come-si-gioca.html" aria-current="page">Come si gioca</a>
+<a href="stanze.html">Stanze e trappole</a>
+<a href="ambienti.html">Ambienti</a>
+<a href="nemici.html">Nemici</a>
+<a href="boss.html">Boss</a>
+<a href="poteri.html">Poteri</a>
+<a href="oggetti.html">Oggetti</a>
+<a href="ricordi.html">Ricordi</a>
+<a href="obiettivi.html">Obiettivi</a>
+<a href="novita.html">Novità</a><p class="version">Versione 0.4.0</p></nav>
+<main>
+<h1>Come si gioca</h1>
+<h2 id="energia-e-mana">Energia e mana</h2>
+<p>In alto a sinistra l'<strong>energia</strong>: 5 tacche all'inizio, e ogni aumento dell'energia massima ne aggiunge una (oltre le 10 vanno a capo). A zero, la discesa finisce.</p>
+<p>In basso al centro la barra azzurra del <strong>mana</strong>: 100 punti. Si ricarica da sola, 25 punti al secondo, 0,8 secondi dopo l'ultimo incantesimo. Senza mana la barra lampeggia di rosso.</p>
+<h2 id="il-dardo-incantato">Il dardo incantato</h2>
+<p>Parte dalla mano e vola dove punta il mirino: 1,5 danni, 8 mana, un lancio ogni 0,3 secondi tenendo premuto. Dopo 20 metri svanisce. Rompe anche i vasi. L'energia dei nemici è a decimali, così anche un +10% di danno si sente.</p>
+<p>Quando colpisci, il nemico lampeggia di bianco e attorno al mirino compare un segno (rosso e più grande se l'hai ucciso).</p>
+<h2 id="il-balzo">Il balzo</h2>
+<p>Spazio: la principessa sparisce e ricompare 5 metri più in là, verso dove sta andando (davanti, se è ferma). Costa 25 mana, poi va atteso 15 secondi: il riquadro del mago accanto all'oggetto attivo si riaccende dal basso, e diventa rosso se il mana non basta. Non passa attraverso muri, porte, cancelli e nemici.</p>
+<h2 id="l-oggetto-attivo">L'oggetto attivo</h2>
+<p>Non c'è inventario: la principessa porta <strong>un oggetto alla volta</strong> (riquadro &quot;Q&quot; in basso) e lo usa con Q. Raccogliendone un altro, quello che aveva resta a terra al suo posto. Gli oggetti stanno nei forzieri (E) e nei vasi (si rompono con un dardo). Vedi <a href="oggetti.html">Oggetti</a>.</p>
+<h2 id="reliquie-e-poteri">Reliquie e poteri</h2>
+<p>Quando cade l'ultimo nemico di un'arena, circa 45% delle volte al centro della stanza sale un altarino con una <strong>reliquia</strong>, una gemma colorata: E per prenderla. Il suo potere dura fino a fine discesa. Il boss lascia invece un dono <strong>maggiore</strong>. Alcuni poteri valgono solo di giorno o di notte, altri compaiono solo se hai già quello che serve. Tutti i poteri sono in <a href="poteri.html">Poteri</a>.</p>
+<h2 id="come-si-sommano-i-poteri">Come si sommano i poteri</h2>
+<p>Ogni potere cambia le statistiche con dei modificatori, e il valore finale si calcola sempre nello stesso ordine, qualunque sia l'ordine in cui li hai presi:</p>
+<ul><li>prima il valore di partenza;</li><li>poi i piatti (+0,3 danni), che si sommano;</li><li>poi le percentuali (+20%), che si sommano tra loro: cinque +20% fanno +100%, non +149%;</li><li>poi i moltiplicatori (×1,5), che si moltiplicano;</li><li>infine i tetti e i valori fissi (&quot;energia al massimo 2&quot;, &quot;i dardi non costano mana&quot;), che vincono sempre.</li></ul>
+<h2 id="giorno-e-notte">Giorno e notte</h2>
+<p>Il tempo passa anche nel castello: il giorno dura 5 minuti e la notte 3, e il ciclo continua da un piano all'altro; la discesa comincia all'alba. Sotto l'energia vedi il sole o la luna e il tempo al prossimo cambio. Dalle finestre delle stanze sul bordo del castello entra il sole (rosso all'alba e al tramonto) o la luna. Alcuni poteri valgono solo di giorno o solo di notte: fuori dalla loro ora restano spenti.</p>
+<h2 id="promesse">Promesse</h2>
+<p>Contro i muri di qualche stanza ci sono <strong>cavalieri accasciati</strong>, venuti a salvarti e rimasti a metà strada (1-2 per piano). E per ascoltarli: ti lasciano 1-2 promesse. Le promesse sono la moneta del <a href="stanze.html#negozio">negozio</a> e restano da una discesa all'altra, nello slot: morendo ne tieni 25% (col Salvadanaio 50%), uscendo dal castello tutte.</p>
+<h2 id="chiavi-dorate">Chiavi dorate</h2>
+<p>Le chiavi non occupano la mano: stanno nel portamonete, come le promesse, e passano da un piano all'altro. Ognuna apre una porta dorata e si consuma. Si trovano nei vasi o si comprano al negozio.</p><h2 id="statistiche">Statistiche di partenza</h2>
+<h3>Dardo incantato</h3>
+<div class="table"><table><tbody><tr><td>Danno</td><td>1,5</td></tr><tr><td>Gittata</td><td>20 m</td></tr><tr><td>Velocità</td><td>18 m/s</td></tr><tr><td>Grandezza (raggio)</td><td>×1</td></tr><tr><td>Costo</td><td>8 mana</td></tr><tr><td>Pausa tra i lanci</td><td>0,3 s</td></tr><tr><td>Dardi a ventaglio</td><td>1</td></tr><tr><td>Dardi di fila</td><td>1</td></tr><tr><td>Nemici trapassati</td><td>0</td></tr><tr><td>Rimbalzi</td><td>0</td></tr><tr><td>Imprecisione</td><td>0 °</td></tr><tr><td>Probabilità di critico</td><td>0%</td></tr><tr><td>Danno critico</td><td>×2</td></tr><tr><td>Danno del fuoco (a fiammata)</td><td>1,5</td></tr><tr><td>Durata del fuoco</td><td>3 s</td></tr><tr><td>Ghiaccio e sonno: uno ogni</td><td>5 dardi</td></tr><tr><td>Mana per dardo a segno</td><td>0</td></tr><tr><td>Mana per uccisione</td><td>0</td></tr></tbody></table></div>
+<h3>Principessa</h3>
+<div class="table"><table><tbody><tr><td>Energia massima</td><td>5</td></tr><tr><td>Mana massimo</td><td>100</td></tr><tr><td>Ricarica del mana</td><td>25 /s</td></tr><tr><td>Velocità camminando</td><td>3,5 m/s</td></tr><tr><td>Distanza del balzo</td><td>5 m</td></tr><tr><td>Costo del balzo</td><td>25 mana</td></tr><tr><td>Schivata</td><td>0%</td></tr><tr><td>Danni in più subiti</td><td>0</td></tr><tr><td>Spine (danno a chi colpisce)</td><td>0</td></tr><tr><td>Luce della mano</td><td>×1</td></tr><tr><td>Forza delle cure</td><td>×1</td></tr><tr><td>Durata delle pozioni</td><td>×1</td></tr><tr><td>Risalita dalla fossa</td><td>2,5 s</td></tr></tbody></table></div>
+<h3>Castello</h3>
+<div class="table"><table><tbody><tr><td>Reliquia da un'arena</td><td>45%</td></tr><tr><td>Promesse dai cavalieri</td><td>×1</td></tr><tr><td>Sconto al negozio</td><td>0 promesse</td></tr><tr><td>Attesa delle trappole</td><td>×1</td></tr><tr><td>Ritardo dei nemici dal fumo</td><td>0 s</td></tr></tbody></table></div>
+
+</main>
+</div>
+<footer>Wiki della versione 0.4.0, generata dal codice del gioco. I nomi e i numeri sono quelli della build.</footer>
+<script src="search.js"></script>
+</body>
+</html>
