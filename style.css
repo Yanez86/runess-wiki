@@ -65,9 +65,12 @@ table { border-collapse: collapse; min-width: 50%; font-size: 15px; }
 th, td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { font-family: "Pixelify", sans-serif; color: var(--muted); font-weight: normal; }
 tr:target { background: var(--panel2); }
-.biome { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin: 16px 0; overflow: hidden; }
-.biome .banner { height: 56px; background: linear-gradient(90deg, var(--fog), var(--light)); }
-.biome > :not(.banner) { margin-left: 16px; margin-right: 16px; }
+.biome { display: grid; grid-template-columns: minmax(0, 460px) minmax(0, 1fr); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin: 16px 0; overflow: hidden; }
+.biome .scene { display: grid; place-items: center; padding: 16px; background: radial-gradient(circle at 50% 40%, var(--light), var(--fog) 75%); }
+.biome .scene img { width: 100%; height: auto; image-rendering: pixelated; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.45)); }
+.biome .info { padding: 0 20px 12px; }
+.hide { filter: blur(5px); cursor: pointer; user-select: none; }
+.hide.shown { filter: none; user-select: auto; }
 .biome h2 { margin-top: 12px; }
 .biome .cols { display: flex; flex-wrap: wrap; gap: 8px 48px; }
 .biome ul { padding-left: 18px; margin-top: 0; }
@@ -85,6 +88,7 @@ footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px
 	h1 { font-size: 44px; }
 	.hero h1 { font-size: 52px; }
 	.cards { grid-template-columns: 1fr; }
+	.biome { grid-template-columns: 1fr; }
 	.card .thumb { width: 72px; height: 72px; }
 	.card .thumb img { max-width: 64px; max-height: 64px; min-width: 40px; }
 	.search { width: auto; flex: 1; }
