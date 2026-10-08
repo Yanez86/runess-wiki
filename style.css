@@ -56,7 +56,6 @@ main > p, main > ul, main aside, main details > p { max-width: 760px; }
 .chips { display: flex; flex-wrap: wrap; gap: 4px; }
 .card .chips { margin: 8px 0 0; }
 .chip { font: 12px "Pixelify", sans-serif; background: var(--panel2); border: 1px solid var(--line); border-radius: 99px; padding: 1px 8px; }
-.gem { width: 40px; height: 40px; transform: rotate(45deg); background: linear-gradient(135deg, #fff8 0 18%, var(--gem) 18% 60%, #0005 60%); border: 2px solid #07040b; box-shadow: 0 0 18px var(--gem); }
 details.spoiler { margin: 24px 0; border: 1px dashed var(--line); border-radius: 10px; padding: 0 14px; }
 details.spoiler summary { cursor: pointer; padding: 12px 0; font-family: "Pixelify", sans-serif; color: var(--pink); }
 details.spoiler[open] { padding-bottom: 8px; }

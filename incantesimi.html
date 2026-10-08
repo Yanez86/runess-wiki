@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incantesimi · Wiki di Runess</title>
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+<button class="menu" type="button" aria-label="Menu">☰</button>
+<a class="brand" href="index.html"><img src="img/icon.png" alt=""><span>Runess</span><small>wiki</small></a>
+<div class="search"><input type="search" id="q" placeholder="Cerca nella wiki…" aria-label="Cerca nella wiki" autocomplete="off"><ol id="results" hidden></ol></div>
+</header>
+<div class="layout">
+<nav class="side"><a href="index.html">Inizio</a>
+<a href="storia.html">La storia</a>
+<a href="comandi.html">Comandi</a>
+<a href="come-si-gioca.html">Come si gioca</a>
+<a href="stanze.html">Stanze e trappole</a>
+<a href="ambienti.html">Ambienti</a>
+<a href="nemici.html">Nemici</a>
+<a href="boss.html">Boss</a>
+<a href="doni.html">Doni</a>
+<a href="oggetti.html">Oggetti</a>
+<a href="incantesimi.html" aria-current="page">Incantesimi</a>
+<a href="ricordi.html">Ricordi</a>
+<a href="obiettivi.html">Obiettivi</a>
+<a href="novita.html">Novità</a><p class="version">Versione 0.10.1</p></nav>
+<main>
+<h1>Incantesimi</h1>
+<p>Oltre al dardo la principessa ha un <strong>incantesimo</strong>, sul tasto Spazio (A col controller): all'inizio il balzo. Se ne tiene uno alla volta, e ognuno è un modo diverso di salvarsi:</p>
+<ul><li><strong>movimento</strong>: spostarsi in un altro modo;</li><li><strong>controllo</strong>: fermare chi ti sta addosso;</li><li><strong>danno</strong>: ricacciarlo indietro. Anche quelli che feriscono spingono via: servono a respirare.</li></ul>
+<p>Gli incantesimi non sono più forti uno dell'altro: cambiano quello che fai, non quanto sei forte. Per questo non fanno crescere la vita dei nemici, e si cambiano gratis.</p>
+<h2 id="cariche-mana-e-forza">Cariche, mana e forza</h2>
+<p>Ogni incantesimo ha le sue <strong>cariche</strong>: ogni lancio ne usa una, che torna pronta da sola dopo qualche secondo, una alla volta. Nel riquadro accanto all'oggetto attivo c'è l'icona dell'incantesimo in mano: nell'angolo quante cariche sono pronte, e quando sono finite l'icona si riaccende dal basso coi secondi che mancano; diventa rossa se il mana non basta. Un incantesimo che non trova dove andare (un tralcio verso il cielo, la pappa sopra una fossa) non parte e non costa niente. Nella fossa non se ne lanciano.</p>
+<p>Quello che i doni, le stelle e i ricordi fanno al balzo lo fanno a qualunque incantesimo: meno mana, una carica in più, una ricarica più svelta, più <strong>forza</strong>. La forza ogni incantesimo la legge a modo suo: il balzo va più lontano, il sonno dura di più, l'anello di fuoco arriva più in là. Il danno di chi ferisce cresce invece col danno del dardo.</p>
+<h2 id="come-s-impara">Come s'impara</h2>
+<p>Il balzo c'è da subito. Gli altri incantesimi si imparano nello <strong>studio</strong>, nella stanza col portone da cui comincia la discesa: contro il muro di lato, appena entri, una libreria coi libri di magia, il tavolo magico, un alambicco e la sfera di cristallo.</p>
+<p>Prima di tutto ci vuole il <strong>tavolo magico</strong>: si compra sulla <a href="ricordi.html">lavagnetta delle promesse</a>, come un ricordo. Non arriva subito: compare nella stanza quando torni dalla discesa dopo averlo comprato. E da solo non basta: sul tavolo manca il <strong>tomo magico</strong>, che si trova soltanto nella <strong>biblioteca</strong>, una stanza dei piani della torre del mago con dentro un labirinto di librerie (vedi <a href="stanze.html">Stanze</a>). Trovato il tomo, sul tavolo si accendono le candele e le rune a terra, e con E si apre il tomo.</p>
+<p>Nel tomo magico ogni incantesimo ha tre passi:</p>
+<p>1. <strong>La traccia</strong>: un'impresa giù nel castello (un guardiano sconfitto, un obiettivo) mette l'incantesimo nel tomo e dice dove cercarne l'oggetto. 2. <strong>L'oggetto</strong>: ogni incantesimo ha l'oggetto della sua fiaba, da trovare scendendo in un posto preciso (un negozio, una stanza segreta, una stanza dorata…). C'è solo dopo la traccia, e finché non lo prendi; preso, è tuo anche se muori. 3. <strong>Lo studio</strong>: sulla formula si scrivono le promesse, anche un po' alla volta, tenendo premuto E. Pagata la formula, l'incantesimo è pronto quando ti svegli dopo la discesa seguente, comunque vada. Se ne studia uno alla volta.</p>
+<h2 id="dove-si-sceglie">Dove si sceglie</h2>
+<p>Gli incantesimi imparati si scelgono nel tomo magico: E su quello che vuoi e lo porti con te. Vale subito, e resta quello anche nelle discese dopo.</p>
+<p>Scendendo, dal piano 2, in circa un piano su tre (30%) nella prima stanza c'è un <strong>altare viola</strong> con un incantesimo imparato che non hai in mano: E per scambiarlo col tuo, che resta sull'altare, così finché sei nel piano puoi ripensarci. La pagina della fiaba di domani «Trovò una bacchetta» mette di sicuro l'altare sul piano che scegli. Morendo, o a una discesa nuova, torni a quello del tomo magico.</p><div class="cards"><article class="card" id="spell-blink"><div class="thumb"><img src="img/item_blink.png" alt="" loading="lazy"></div><div class="body"><h3>Balzo</h3><p>In un attimo sei cinque metri più in là, verso dove stai andando.</p><dl><div><dt>Famiglia</dt><dd>Movimento</dd></div><div><dt>Mana</dt><dd>25</dd></div><div><dt>Cariche</dt><dd>2</dd></div><div><dt>Ricarica</dt><dd>2 s</dd></div><div><dt>Forza</dt><dd>la lunghezza del balzo</dd></div><div><dt>Si impara</dt><dd>da subito</dd></div></dl></div></article><article class="card" id="spell-beanstalk"><div class="thumb"><img src="img/item_spell_beanstalk.png" alt="" loading="lazy"></div><div class="body"><h3>Tralcio del fagiolo</h3><p>Un tralcio verso dove guardi, fino a 12 metri: se prende un muro o il pavimento ti tira lì; se prende un nemico, che non sia un guardiano, lo tira da te e lo fa barcollare.</p><dl><div><dt>Famiglia</dt><dd>Movimento</dd></div><div><dt>Mana</dt><dd>30</dd></div><div><dt>Cariche</dt><dd>2</dd></div><div><dt>Ricarica</dt><dd>4 s</dd></div><div><dt>Forza</dt><dd>la lunghezza del tralcio</dd></div><div><dt>Traccia</dt><dd>sconfiggi il troll</dd></div><div><dt>Oggetto</dt><dd>Il sacchetto di fagioli: lo vende il mercante di un negozio, come a Jack</dd></div><div><dt>Studio</dt><dd>10 promesse, e una discesa</dd></div></dl></div></article><article class="card" id="spell-shadow"><div class="thumb"><img src="img/item_spell_shadow.png" alt="" loading="lazy"></div><div class="body"><h3>Ombra di Peter Pan</h3><p>Lasci la tua ombra dove sei. Entro 4 secondi, di nuovo, e torni da lei in un attimo, anche passando in mezzo ai nemici.</p><dl><div><dt>Famiglia</dt><dd>Movimento</dd></div><div><dt>Mana</dt><dd>20</dd></div><div><dt>Cariche</dt><dd>2</dd></div><div><dt>Ricarica</dt><dd>5 s</dd></div><div><dt>Forza</dt><dd>quanto ti aspetta l'ombra</dd></div><div><dt>Traccia</dt><dd>raggiungi l'obiettivo «Seconda stella a destra»: scendi 5 piani in una sola discesa</dd></div><div><dt>Oggetto</dt><dd>L'ombra scappata: è scappata in una stanza segreta: cercala dietro i muri che suonano vuoti</dd></div><div><dt>Studio</dt><dd>15 promesse, e una discesa</dd></div></dl></div></article><article class="card" id="spell-sandman"><div class="thumb"><img src="img/item_spell_sandman.png" alt="" loading="lazy"></div><div class="body"><h3>Sabbia di Ole Chiudigliocchi</h3><p>Una manciata di sabbia a ventaglio davanti a te, fino a 6 metri: chi la prende si addormenta per 3 secondi. Un guardiano la metà, e infuriato niente.</p><dl><div><dt>Famiglia</dt><dd>Controllo</dd></div><div><dt>Mana</dt><dd>35</dd></div><div><dt>Cariche</dt><dd>2</dd></div><div><dt>Ricarica</dt><dd>8 s</dd></div><div><dt>Forza</dt><dd>quanto dura il sonno</dd></div><div><dt>Traccia</dt><dd>sconfiggi il mostro sotto il letto</dd></div><div><dt>Oggetto</dt><dd>L'ombrello di Ole: è nel tesoro di una stanza dorata</dd></div><div><dt>Studio</dt><dd>15 promesse, e una discesa</dd></div></dl></div></article><article class="card" id="spell-porridge"><div class="thumb"><img src="img/item_spell_porridge.png" alt="" loading="lazy"></div><div class="body"><h3>Pentolino della pappa dolce</h3><p>Dove guardi, fino a 12 metri, trabocca la pappa: per 6 secondi chi ci cammina dentro va pianissimo. Chi vola no.</p><dl><div><dt>Famiglia</dt><dd>Controllo</dd></div><div><dt>Mana</dt><dd>30</dd></div><div><dt>Cariche</dt><dd>2</dd></div><div><dt>Ricarica</dt><dd>8 s</dd></div><div><dt>Forza</dt><dd>quanto dura la pappa</dd></div><div><dt>Traccia</dt><dd>sconfiggi il troll di palude</dd></div><div><dt>Oggetto</dt><dd>Il pentolino di rame: è fra le pentole dell'erborista</dd></div><div><dt>Studio</dt><dd>15 promesse, e una discesa</dd></div></dl></div></article><article class="card" id="spell-matches"><div class="thumb"><img src="img/item_spell_matches.png" alt="" loading="lazy"></div><div class="body"><h3>Fiammiferi della piccola fiammiferaia</h3><p>Accendi un fiammifero: un anello di fuoco parte da te e corre fino a 4 metri. Chi tocca si brucia, prende fuoco e viene spinto via.</p><dl><div><dt>Famiglia</dt><dd>Danno</dd></div><div><dt>Mana</dt><dd>30</dd></div><div><dt>Cariche</dt><dd>3</dd></div><div><dt>Ricarica</dt><dd>10 s</dd></div><div><dt>Forza</dt><dd>fin dove arriva l'anello</dd></div><div><dt>Traccia</dt><dd>sconfiggi il mago del fuoco</dd></div><div><dt>Oggetto</dt><dd>La scatola di fiammiferi: la lascia un guardiano sconfitto di notte</dd></div><div><dt>Studio</dt><dd>20 promesse, e una discesa</dd></div></dl></div></article><article class="card" id="spell-wolf_breath"><div class="thumb"><img src="img/item_spell_wolf_breath.png" alt="" loading="lazy"></div><div class="body"><h3>Soffio del lupo</h3><p>Soffi e soffi: un cono di vento davanti a te, fino a 5 metri, ferisce poco ma spinge via forte. Chi sbatte contro un muro si fa più male.</p><dl><div><dt>Famiglia</dt><dd>Danno</dd></div><div><dt>Mana</dt><dd>30</dd></div><div><dt>Cariche</dt><dd>2</dd></div><div><dt>Ricarica</dt><dd>6 s</dd></div><div><dt>Forza</dt><dd>la spinta del vento</dd></div><div><dt>Traccia</dt><dd>raggiungi l'obiettivo «Sterminatrice»: uccidi 500 nemici</dd></div><div><dt>Oggetto</dt><dd>La zanna del lupo: la lascia un lupo, nelle caverne</dd></div><div><dt>Studio</dt><dd>20 promesse, e una discesa</dd></div></dl></div></article></div>
+
+</main>
+</div>
+<footer>Wiki della versione 0.10.1, generata dal codice del gioco. I nomi e i numeri sono quelli della build.</footer>
+<script src="search.js"></script>
+</body>
+</html>
