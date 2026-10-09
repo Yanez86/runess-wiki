@@ -63,6 +63,8 @@ details.spoiler[open] { padding-bottom: 8px; }
 table { border-collapse: collapse; min-width: 50%; font-size: 15px; }
 th, td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { font-family: "Pixelify", sans-serif; color: var(--muted); font-weight: normal; }
+td.medal { width: 48px; padding-right: 0; vertical-align: middle; }
+td.medal img { display: block; width: 48px; height: 48px; image-rendering: pixelated; }
 tr:target { background: var(--panel2); }
 .biome { display: grid; grid-template-columns: minmax(0, 460px) minmax(0, 1fr); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin: 16px 0; overflow: hidden; }
 .biome .scene { display: grid; place-items: center; padding: 16px; background: radial-gradient(circle at 50% 40%, var(--light), var(--fog) 75%); }
